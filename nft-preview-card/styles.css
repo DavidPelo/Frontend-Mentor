@@ -1,12 +1,13 @@
 :root {
   --clr-primary-blue: hsl(215, 51%, 70%);
-  --clr-primary-cyan: Cyan: hsl(178, 100%, 50%);
+  --clr-primary-cyan: hsl(178, 100%, 50%);
 
   --clr-bgMain: hsl(217, 54%, 11%);
   --clr-bgCard: hsl(216, 50%, 16%);
-  --clr-bgline: hsl(215, 32%, 27%);
+  --clr-bgLine: hsl(215, 32%, 27%);
+  --clr-white: hsl(0, 0%, 100%);
 
-  --ff-primary: 'Outfit', sans-serif;
+  --ff-primary: "Outfit", sans-serif;
 }
 
 *,
@@ -19,14 +20,110 @@
 body {
   background-color: var(--clr-bgMain);
   font-family: var(--ff-primary);
-  /* font-weight: 400;
-  font-size: 1.3125rem;
-  line-height: 1.6; */
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100vh;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
 
 .card-container {
   background-color: var(--clr-bgCard);
+  border-radius: 14px;
+  box-shadow: 0px 13px 38px 14px rgba(0,0,0,0.25);
+  margin-top: 5em;
+  padding: 1.5em;
+  width: 370px;
+}
+
+.nft {
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.line {
+  background-color: var(--clr-bgLine);
+  border: none;
+  height: 1px;
+}
+
+.title {
+  color: var(--clr-white);
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  height: 3em;
+}
+
+.description {
+  color: var(--clr-primary-blue);
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  height: 3em;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  height: 3em;
+}
+
+.price {
+  color: var(--clr-primary-cyan);
+  display: flex;
+  align-items: center;
+}
+
+.price span {
+  margin-left: .35em;
+}
+
+.time-left {
+  color: var(--clr-primary-blue);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.time-left span {
+  margin-left: .35em;
+}
+
+.creator {
+  display: flex;
+  font-weight: 300;
+  align-items: center;
+  height: 3em;
+}
+
+.creator img {
+  width: 2em;
+}
+
+.creator p {
+  margin-left: 1em;
+  color: var(--clr-primary-blue);
+}
+
+.signature {
+  color: var(--clr-white);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 2em;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
