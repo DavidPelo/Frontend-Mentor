@@ -1,0 +1,32 @@
+:root {
+  --clr-primary-blue: hsl(215, 51%, 70%);
+  --clr-primary-cyan: Cyan: hsl(178, 100%, 50%);
+
+  --clr-bgMain: hsl(217, 54%, 11%);
+  --clr-bgCard: hsl(216, 50%, 16%);
+  --clr-bgline: hsl(215, 32%, 27%);
+
+  --ff-primary: 'Outfit', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: var(--clr-bgMain);
+  font-family: var(--ff-primary);
+  /* font-weight: 400;
+  font-size: 1.3125rem;
+  line-height: 1.6; */
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.card-container {
+  background-color: var(--clr-bgCard);
+}
